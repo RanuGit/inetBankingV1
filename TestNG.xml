@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testNGSuite">
+<listeners>
+	<listener class-name="com.inetBanking.utilities.Reporting"/>
+	
+</listeners>
+	<test name="BankingApplication_Test">
+		<parameter name="browser" value="FF" />
+		<classes>
+			 <class name="com.inetBanking.testcases.TC_Login_001" />
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- testNGSuite -->
